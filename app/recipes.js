@@ -21,7 +21,7 @@ const recipes = [
       name: "Black bean & sweet potato tortilla pockets",
       ingredients: [
         "leaf salad",
-        "Sweet potato",
+        "sweet potato",
         "tomato paste",
         "black beans",
         "paprika",

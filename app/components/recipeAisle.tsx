@@ -1,15 +1,24 @@
-// interface RecipeProps {
-//   title: string,
-//   items: any
-// }
 
-export default function RecipeAisle({ title, items }: any) {
+type IngredientType = {
+  [ingredient: string]: number;
+};
+
+type ComponentType = {
+  title: string;
+  items: IngredientType
+}
+
+export default function RecipeAisle({ title, items }:  ComponentType) {
   return (
     <div>
-      <p>{title}</p>
+      <p className="text-2xl">{title}</p>
       <ul>
-        {items.map((a: any, i: number) => {
-          return <li key={i}>{a}</li>;
+        {Object.entries(items).map(([ingredient, count]) => {
+          return (
+            <li key={ingredient}>
+              {ingredient} x {count}
+            </li>
+          );
         })}
       </ul>
     </div>
