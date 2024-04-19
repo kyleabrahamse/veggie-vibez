@@ -64,10 +64,10 @@ export default function Home() {
   Object.entries(ingredientCounts).map(([ingredient, count]) => {
     if (aisles.freshProduce.includes(ingredient)) {
       produce[ingredient] = count;
-    } else if (aisles.fridgeyStuff.includes(ingredient)) {
-      fridge[ingredient] = count;
     } else if (aisles.pantry.includes(ingredient)) {
       pantry[ingredient] = count;
+    } else if (aisles.fridgeyStuff.includes(ingredient)) {
+      fridge[ingredient] = count;
     } else if (aisles.canned.includes(ingredient)) {
       canned[ingredient] = count;
     } else if (aisles.breads.includes(ingredient)) {
