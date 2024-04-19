@@ -1,16 +1,33 @@
 "use client";
 
-import { useState } from "react";
-import { recipes, aisles, RecipeObject, Aisles } from "./recipes";
+import { useState, useEffect } from "react";
+import { recipes, aisles } from "./recipes";
 import RecipeAisle from "./components/recipeAisle";
 
+type RecipeObject = {
+  name: string;
+  ingredients: string[];
+};
+
 export default function Home() {
-  // State variables to manage recipes, ingredient counts, and selected number of meals
-  const [weeklyRecipes, setWeeklyRecipes] = useState<RecipeObject[]>([]);
+   // State variables to manage recipes, ingredient counts, and selected number of meals
+   const [weeklyRecipes, setWeeklyRecipes] = useState<RecipeObject[]>(() => {
+    const storedRecipes = localStorage.getItem("weeklyRecipes");
+    return storedRecipes ? JSON.parse(storedRecipes) : [];
+  });
   const [ingredientCounts, setIngredientCounts] = useState<{
     [key: string]: number;
-  }>({});
+  }>(() => {
+    const storedCounts = localStorage.getItem("ingredientCounts");
+    return storedCounts ? JSON.parse(storedCounts) : {};
+  });
   const [num, setNum] = useState<number>(0);
+
+  // Save weeklyRecipes and ingredientCounts to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem("weeklyRecipes", JSON.stringify(weeklyRecipes));
+    localStorage.setItem("ingredientCounts", JSON.stringify(ingredientCounts));
+  }, [weeklyRecipes, ingredientCounts]);
 
   // Function to randomly select a recipe from the provided recipes array
   function randomRecipe(arr: RecipeObject[]): RecipeObject {
