@@ -90,34 +90,42 @@ export default function Home() {
   console.log(produce);
 
   return (
-    <main>
-      <h1>Veggie Vibez</h1>
-      <h2>Meals</h2>
-      <ul>
-        {weeklyRecipes?.map((recipe, i) => {
-          return <li key={i}>{recipe.name}</li>;
-        })}
-      </ul>
-      <input
-        type="number"
-        className="border border-gray-300"
-        min="0"
-        max="7"
-        onChange={handleChange}
-        value={num}
-      />
-      <button onClick={generateRandomRecipe} className="border border-gray-500">
-        Genrate Shopping List
-      </button>
-      <h2>Shopping List</h2>
-      <ul>
-        <RecipeAisle title="Fresh Produce" items={produce} />
-        <RecipeAisle title="Pantry" items={pantry} />
-        <RecipeAisle title="Fridgey stuff" items={fridge} />
-        <RecipeAisle title="Canned" items={canned} />
-        <RecipeAisle title="breads" items={breads} />
-        <RecipeAisle title="Frozen" items={frozen} />
-      </ul>
+    <main className="bg-[#73BA9B] pt-10 pb-20">
+      <div className="md:w-5/12 w-10/12 bg-white border-2 border-grey-100 flex flex-col mx-auto p-5 rounded-lg">
+        <h1 className="text-3xl mx-auto">Veggie Vibez</h1>
+        <h2 className="text-xl pt-10 pb-5">Meals</h2>
+        <ul>
+          {weeklyRecipes?.map((recipe, i) => {
+            return <li key={i}>{recipe.name}</li>;
+          })}
+        </ul>
+        <div className="flex my-4 mx-auto gap-5">
+          <input
+            type="number"
+            className="border border-gray-300 px-5 py-2 rounded-lg "
+            min="0"
+            max="7"
+            placeholder="Number of recipes"
+            onChange={handleChange}
+            value={num}
+          />
+          <button
+            onClick={generateRandomRecipe}
+            className="border bg-[#4fd5fe] rounded-lg px-5 py-2"
+          >
+            Genrate Shopping List
+          </button>
+        </div>
+        <h2>Shopping List</h2>
+        <ul>
+          <RecipeAisle title="Fresh Produce" items={produce} />
+          <RecipeAisle title="Pantry" items={pantry} />
+          <RecipeAisle title="Fridgey stuff" items={fridge} />
+          <RecipeAisle title="Canned" items={canned} />
+          <RecipeAisle title="breads" items={breads} />
+          <RecipeAisle title="Frozen" items={frozen} />
+        </ul>
+      </div>
     </main>
   );
 }
