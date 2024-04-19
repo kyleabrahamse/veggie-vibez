@@ -1,13 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { recipes, aisles } from "./recipes";
+import { recipes, aisles, RecipeObject, Aisles } from "./recipes";
 import RecipeAisle from "./components/recipeAisle";
-
-type RecipeObject = {
-  name: string;
-  ingredients: string[];
-};
 
 export default function Home() {
   // State variables to manage recipes, ingredient counts, and selected number of meals
@@ -42,7 +37,7 @@ export default function Home() {
         selectedRecipes.push(recipe);
 
         // Update ingredient counts for each ingredient in the recipe
-        recipe.ingredients.forEach((ingredient) => {
+        recipe.ingredients.forEach((ingredient: any) => {
           newIngredientCounts[ingredient] =
             (newIngredientCounts[ingredient] || 0) + 1;
         });
