@@ -102,7 +102,7 @@ export default function Home() {
   console.log(produce);
 
   return (
-    <main className="bg-[#73BA9B] pt-10 pb-20">
+    <main className="bg-[#73BA9B] pt-10 pb-64">
       <div className="md:w-5/12 w-10/12 bg-white border-2 border-grey-100 flex flex-col mx-auto p-5 rounded-lg">
         <h1 className="text-3xl mx-auto">Veggie Vibez</h1>
         <h2 className="text-xl pt-10 pb-5">Meals</h2>
