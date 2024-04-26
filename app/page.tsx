@@ -10,8 +10,8 @@ type RecipeObject = {
 };
 
 export default function Home() {
-   // State variables to manage recipes, ingredient counts, and selected number of meals
-   const [weeklyRecipes, setWeeklyRecipes] = useState<RecipeObject[]>(() => {
+  // State variables to manage recipes, ingredient counts, and selected number of meals
+  const [weeklyRecipes, setWeeklyRecipes] = useState<RecipeObject[]>(() => {
     const storedRecipes = localStorage.getItem("weeklyRecipes");
     return storedRecipes ? JSON.parse(storedRecipes) : [];
   });
@@ -81,10 +81,10 @@ export default function Home() {
   Object.entries(ingredientCounts).map(([ingredient, count]) => {
     if (aisles.freshProduce.includes(ingredient)) {
       produce[ingredient] = count;
-    } else if (aisles.pantry.includes(ingredient)) {
-      pantry[ingredient] = count;
     } else if (aisles.fridgeyStuff.includes(ingredient)) {
       fridge[ingredient] = count;
+    } else if (aisles.pantry.includes(ingredient)) {
+      pantry[ingredient] = count;
     } else if (aisles.canned.includes(ingredient)) {
       canned[ingredient] = count;
     } else if (aisles.breads.includes(ingredient)) {
@@ -131,8 +131,8 @@ export default function Home() {
         <h2>Shopping List</h2>
         <ul>
           <RecipeAisle title="Fresh Produce" items={produce} />
-          <RecipeAisle title="Pantry" items={pantry} />
           <RecipeAisle title="Fridgey stuff" items={fridge} />
+          <RecipeAisle title="Pantry" items={pantry} />
           <RecipeAisle title="Canned" items={canned} />
           <RecipeAisle title="breads" items={breads} />
           <RecipeAisle title="Frozen" items={frozen} />
