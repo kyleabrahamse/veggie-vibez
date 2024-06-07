@@ -24,10 +24,10 @@ export default function Home() {
   const [num, setNum] = useState<number>(0);
 
   // Save weeklyRecipes and ingredientCounts to localStorage whenever they change
-  useEffect(() => {
-    localStorage.setItem("weeklyRecipes", JSON.stringify(weeklyRecipes));
-    localStorage.setItem("ingredientCounts", JSON.stringify(ingredientCounts));
-  }, [weeklyRecipes, ingredientCounts]);
+  // useEffect(() => {
+  //   localStorage.setItem("weeklyRecipes", JSON.stringify(weeklyRecipes));
+  //   localStorage.setItem("ingredientCounts", JSON.stringify(ingredientCounts));
+  // }, [weeklyRecipes, ingredientCounts]);
 
   // Function to randomly select a recipe from the provided recipes array
   function randomRecipe(arr: RecipeObject[]): RecipeObject {
