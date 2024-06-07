@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { recipes, aisles } from "./recipes";
 import RecipeAisle from "./components/recipeAisle";
 
@@ -11,23 +11,11 @@ type RecipeObject = {
 
 export default function Home() {
   // State variables to manage recipes, ingredient counts, and selected number of meals
-  const [weeklyRecipes, setWeeklyRecipes] = useState<RecipeObject[]>(() => {
-    const storedRecipes = localStorage.getItem("weeklyRecipes");
-    return storedRecipes ? JSON.parse(storedRecipes) : [];
-  });
+  const [weeklyRecipes, setWeeklyRecipes] = useState<RecipeObject[]>([]);
   const [ingredientCounts, setIngredientCounts] = useState<{
     [key: string]: number;
-  }>(() => {
-    const storedCounts = localStorage.getItem("ingredientCounts");
-    return storedCounts ? JSON.parse(storedCounts) : {};
-  });
+  }>({});
   const [num, setNum] = useState<number>(0);
-
-  // Save weeklyRecipes and ingredientCounts to localStorage whenever they change
-  // useEffect(() => {
-  //   localStorage.setItem("weeklyRecipes", JSON.stringify(weeklyRecipes));
-  //   localStorage.setItem("ingredientCounts", JSON.stringify(ingredientCounts));
-  // }, [weeklyRecipes, ingredientCounts]);
 
   // Function to randomly select a recipe from the provided recipes array
   function randomRecipe(arr: RecipeObject[]): RecipeObject {
@@ -92,7 +80,7 @@ export default function Home() {
     } else if (aisles.frozen.includes(ingredient)) {
       frozen[ingredient] = count;
     } else {
-      // Warn if any ingredients were not added to aisle catagory
+      // Warn if any ingredients were not added to aisle category
       console.warn(
         `Ingredient "${ingredient}" not assigned to an aisle category`
       );
