@@ -76,6 +76,7 @@ const recipes = [
       "veg stock",
       "cumin-ground",
       "curry powder",
+      "naan",
     ],
   },
   {
@@ -92,6 +93,7 @@ const recipes = [
       "veg stock",
       "fenugreek-ground",
       "curry powder",
+      "naan",
     ],
   },
   {
@@ -107,6 +109,7 @@ const recipes = [
       "rice",
       "finely chopped tomatoes",
       "curry powder",
+      "naan",
     ],
   },
   {
@@ -125,6 +128,7 @@ const recipes = [
       "butternut",
       "veg stock",
       "curry powder",
+      "naan",
     ],
   },
   {
@@ -593,9 +597,62 @@ const recipes = [
       "toasted sesame oil",
     ],
   },
+  {
+    name: "chickpea and spinach tikka masala",
+    ingredients: [
+      "onion",
+      "garlic",
+      "coriander",
+      "tomato paste",
+      "tikka masala paste",
+      "chickpeas",
+      "veg stock",
+      "coconut milk",
+      "spinach",
+      "rice",
+      "cashew nuts",
+      "spread",
+    ],
+  },
+  {
+    name: "parma rosa fusili",
+    ingedients: [
+      "baby tomotoes",
+      "chives",
+      "red onion",
+      "garlic clove",
+      "soy cream",
+      "marinara sauce",
+      "veg stock",
+      "fusili",
+      "pumpkin seeds",
+    ],
+  },
+  {
+    name: "udon curry soup",
+    ingredients: [
+      "red pepper",
+      "garlic",
+      "carrot",
+      "smoked tofu",
+      "cornflour",
+      "indo spice mix",
+      "thai curry paste",
+      "veg stock",
+      "coconut milk",
+      "udon noodles",
+      "pea pods",
+      "sambal paste",
+    ],
+  },
 ];
 
+// ******************************
+// ******************************
+// ******************************
+
 // Aisles object for sorting list
+
 // ******************************
 // ******************************
 // ******************************
@@ -639,6 +696,8 @@ const aisles = {
     "cabbage-shredded-red",
     "lemon",
     "avo",
+    "chives",
+    "pea pods",
   ],
   fridgeyStuff: [
     "tofu",
@@ -649,6 +708,8 @@ const aisles = {
     "cheese slice",
     "creamy single oat",
     "gnocchi",
+    "spread",
+    "smoked tofu",
   ],
   pantry: [
     "mango chutney",
@@ -713,6 +774,14 @@ const aisles = {
     "soy chunks",
     "pesto",
     "pumpkin seeds",
+    "tikka masala paste",
+    "coconut milk",
+    "soy cream",
+    "marinara sauce",
+    "fusili",
+    "sambal paste",
+    "indo spice mix",
+    "thai curry paste",
   ],
   canned: [
     "black beans",
