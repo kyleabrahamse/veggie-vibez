@@ -12,7 +12,7 @@ const recipes = [
       "ginger & garlic paste",
       "turmeric",
       "veg stock",
-      "Pittas",
+      "pittas",
       "cumin seeds",
       "Curry powder",
     ],
@@ -43,7 +43,7 @@ const recipes = [
       "burger patties",
       "relish",
       "onion marmalade",
-      "Burger buns",
+      "burger buns",
     ],
   },
   {
@@ -55,7 +55,7 @@ const recipes = [
       "tomato paste",
       "naan",
       "Veg stock",
-      "Cumin-ground",
+      "cumin-ground",
       "chick'n",
       "cultured coconut",
       "corriander-ground",
@@ -616,7 +616,7 @@ const recipes = [
   },
   {
     name: "parma rosa fusili",
-    ingedients: [
+    ingredients: [
       "baby tomotoes",
       "chives",
       "red onion",
@@ -799,7 +799,6 @@ const aisles = {
     "naan bread",
     "burger buns",
     "brioche buns",
-    "pittas",
     "bread crumbs",
   ],
   frozen: ["peas", "mince", "soy mince"],
