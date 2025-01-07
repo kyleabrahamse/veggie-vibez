@@ -796,7 +796,7 @@ const aisles = {
   breads: [
     "tortillas",
     "pittas",
-    "naan bread",
+    "naan",
     "burger buns",
     "brioche buns",
     "bread crumbs",

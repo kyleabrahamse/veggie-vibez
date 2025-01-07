@@ -122,7 +122,7 @@ export default function Home() {
           <RecipeAisle title="Fridgey stuff" items={fridge} />
           <RecipeAisle title="Pantry" items={pantry} />
           <RecipeAisle title="Canned" items={canned} />
-          <RecipeAisle title="breads" items={breads} />
+          <RecipeAisle title="Breads" items={breads} />
           <RecipeAisle title="Frozen" items={frozen} />
         </ul>
       </div>
