@@ -10,45 +10,38 @@ type RecipeObject = {
 };
 
 export default function Home() {
-  // State variables to manage recipes, ingredient counts, and selected number of meals
   const [weeklyRecipes, setWeeklyRecipes] = useState<RecipeObject[]>([]);
   const [ingredientCounts, setIngredientCounts] = useState<{
     [key: string]: number;
   }>({});
   const [num, setNum] = useState<number>(0);
 
-  // Function to randomly select a recipe from the provided recipes array
   function randomRecipe(arr: RecipeObject[]): RecipeObject {
     let randomIndex: number = Math.floor(Math.random() * recipes.length);
     return arr[randomIndex];
   }
 
-  // Handle changes in the number input element
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
     setNum(event.target.valueAsNumber);
   }
 
-  // Function to generate a random list of recipes and update ingredient counts
   const generateRandomRecipe = () => {
     let selectedRecipes: RecipeObject[] = [];
     let newIngredientCounts: { [key: string]: number } = {};
 
-    // Loop until the desired number of recipes is reached
     while (selectedRecipes.length < num) {
       let recipe = randomRecipe(recipes);
 
-      // Ensure recipe isn't already selected and add it to the list
       if (!selectedRecipes.includes(recipe)) {
         selectedRecipes.push(recipe);
 
-        // Update ingredient counts for each ingredient in the recipe
         recipe.ingredients.forEach((ingredient: any) => {
           newIngredientCounts[ingredient] =
             (newIngredientCounts[ingredient] || 0) + 1;
         });
       }
     }
-    // Update state with the selected recipes and ingredient counts
+
     setWeeklyRecipes(selectedRecipes);
     setIngredientCounts(newIngredientCounts);
   };
@@ -57,7 +50,6 @@ export default function Home() {
     [ingredient: string]: number;
   };
 
-  // Initialize empty ingredient count objects for different categories
   let produce: IngredientType = {};
   let fridge: IngredientType = {};
   let pantry: IngredientType = {};
@@ -65,7 +57,6 @@ export default function Home() {
   let breads: IngredientType = {};
   let frozen: IngredientType = {};
 
-  // Loop through ingredient counts and sort them based on aisle category using aisles object
   Object.entries(ingredientCounts).map(([ingredient, count]) => {
     if (aisles.freshProduce.includes(ingredient)) {
       produce[ingredient] = count;
@@ -80,14 +71,40 @@ export default function Home() {
     } else if (aisles.frozen.includes(ingredient)) {
       frozen[ingredient] = count;
     } else {
-      // Warn if any ingredients were not added to aisle category
       console.warn(
         `Ingredient "${ingredient}" not assigned to an aisle category`
       );
     }
   });
 
-  console.log(produce);
+  // Function to generate the shopping list and recipe names as text
+  const generateCopyText = () => {
+    // Create a list of recipe names, each on a new line
+    const recipeNames = weeklyRecipes
+      .map((recipe) => recipe.name)
+      .join("\n");
+
+    // Create a list of unique ingredients, each on a new line
+    const allIngredients = weeklyRecipes
+      .flatMap((recipe) => recipe.ingredients)
+      .filter((ingredient, index, self) => self.indexOf(ingredient) === index) // Remove duplicates
+      .join("\n");
+
+    return `Recipes:\n${recipeNames}\n\nIngredients:\n${allIngredients}`;
+  };
+
+  // Function to copy the generated text to the clipboard
+  const handleCopy = () => {
+    const textToCopy = generateCopyText();
+    navigator.clipboard.writeText(textToCopy).then(
+      () => {
+        alert("Shopping list and recipe names copied to clipboard!");
+      },
+      (err) => {
+        console.error("Failed to copy: ", err);
+      }
+    );
+  };
 
   return (
     <main className="bg-[#73BA9B] pt-10 pb-64">
@@ -116,6 +133,7 @@ export default function Home() {
             Genrate Shopping List
           </button>
         </div>
+
         <h2>Shopping List</h2>
         <ul>
           <RecipeAisle title="Fresh Produce" items={produce} />
@@ -125,6 +143,13 @@ export default function Home() {
           <RecipeAisle title="Breads" items={breads} />
           <RecipeAisle title="Frozen" items={frozen} />
         </ul>
+
+        <button
+          onClick={handleCopy}
+          className="mt-5 border bg-[#4fd5fe] rounded-lg px-5 py-2"
+        >
+          Copy Shopping List & Recipes
+        </button>
       </div>
     </main>
   );
