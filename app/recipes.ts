@@ -550,7 +550,7 @@ const recipes = [
     ],
   },
   {
-    name: "Gnocchi",
+    name: "Red Pesto Gnocchi",
     ingredients: [
       "onion",
       "gnocchi",
@@ -558,7 +558,7 @@ const recipes = [
       "spinach",
       "nooch",
       "soy chunks",
-      "pesto",
+      "red pesto",
     ],
   },
   {
@@ -571,7 +571,7 @@ const recipes = [
       "kale",
       "agave",
       "tahini",
-      "bulgar wheat",
+      "quinoa",
       "chilli flakes",
       "oregano-dried",
       "white miso paste",
@@ -782,6 +782,8 @@ const aisles = {
     "sambal paste",
     "indo spice mix",
     "thai curry paste",
+    "bulgar wheat",
+    "quinoa",
   ],
   canned: [
     "black beans",
