@@ -645,6 +645,22 @@ const recipes = [
       "sambal paste",
     ],
   },
+  {
+    name: "chakalaka",
+    ingredients: [
+      "onion",
+      "garlic",
+      "green pepper",
+      "red pepper",
+      "carrots",
+      "tomato",
+      "tomato paste",
+      "baked beans",
+      "spice",
+      "veg stock",
+      "corriander",
+    ],
+  }, 
 ];
 
 // ******************************
@@ -784,6 +800,7 @@ const aisles = {
     "thai curry paste",
     "bulgar wheat",
     "quinoa",
+    "baked beans",
   ],
   canned: [
     "black beans",
