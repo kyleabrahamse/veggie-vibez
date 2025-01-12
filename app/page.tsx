@@ -79,18 +79,23 @@ export default function Home() {
 
   // Function to generate the shopping list and recipe names as text
   const generateCopyText = () => {
-    // Create a list of recipe names, each on a new line
-    const recipeNames = weeklyRecipes
-      .map((recipe) => recipe.name)
-      .join("\n");
+    const recipeNames = weeklyRecipes.map((recipe) => recipe.name).join("\n");
 
-    // Create a list of unique ingredients, each on a new line
-    const allIngredients = weeklyRecipes
-      .flatMap((recipe) => recipe.ingredients)
-      .filter((ingredient, index, self) => self.indexOf(ingredient) === index) // Remove duplicates
-      .join("\n");
+    const formatAisle = (aisleName: string, items: IngredientType) => {
+      const itemList = Object.entries(items)
+        .map(([ingredient, count]) => `${ingredient} (${count})`)
+        .join("\n");
+      return `${aisleName}:\n${itemList}`;
+    };
 
-    return `Recipes:\n${recipeNames}\n\nIngredients:\n${allIngredients}`;
+    const produceList = formatAisle("Fresh Produce", produce);
+    const fridgeList = formatAisle("Fridgey stuff", fridge);
+    const pantryList = formatAisle("Pantry", pantry);
+    const cannedList = formatAisle("Canned", canned);
+    const breadsList = formatAisle("Breads", breads);
+    const frozenList = formatAisle("Frozen", frozen);
+
+    return `Recipes:\n${recipeNames}\n\nShopping List:\n\n${produceList}\n\n${fridgeList}\n\n${pantryList}\n\n${cannedList}\n\n${breadsList}\n\n${frozenList}`;
   };
 
   // Function to copy the generated text to the clipboard
