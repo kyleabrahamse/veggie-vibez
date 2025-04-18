@@ -1041,7 +1041,7 @@ const aisles = {
     "mango chutney",
     "tomato paste",
     "solid creamed coconut",
-    "ginger & garlic paste",
+    "garlic paste",
     "turmeric",
     "veg stock",
     "cumin seeds",
