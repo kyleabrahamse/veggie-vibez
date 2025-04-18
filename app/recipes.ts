@@ -753,7 +753,7 @@ const recipes = [
   },
   {
     name: "coconut curry dal & rice",
-    indgredients: [
+    ingredients: [
       "onion",
       "pepper-red",
       "solid creamed coconut",
