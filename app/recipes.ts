@@ -58,7 +58,7 @@ const recipes = [
       "cumin-ground",
       "chick'n",
       "cultured coconut",
-      "corriander-ground",
+      "coriander-ground",
       "curry powder",
     ],
   },
@@ -118,7 +118,7 @@ const recipes = [
       "onion",
       "garlic",
       "cashews",
-      "corriander",
+      "coriander",
       "spinach",
       "tomato paste",
       "solid creamed coconut",
@@ -139,7 +139,7 @@ const recipes = [
       "chilli",
       "tomato",
       "lime",
-      "corriander",
+      "coriander",
       "tomato paste",
       "sweetcorn",
       "black beans",
@@ -153,7 +153,7 @@ const recipes = [
     name: "Oven baked coconut veg curry",
     ingredients: [
       "cherry tomatoes",
-      "corriander",
+      "coriander",
       "sweet potato",
       "tomato paste",
       "peas",
@@ -183,7 +183,7 @@ const recipes = [
     name: "Tofu pakoras with fries",
     ingredients: [
       "mango chutney",
-      "corriander",
+      "coriander",
       "tofu",
       "chilli",
       "potato",
@@ -212,7 +212,7 @@ const recipes = [
     ],
   },
   {
-    name: "spicy noodle soup with Korean-style tofu",
+    name: "Spicy noodle soup with Korean-style tofu",
     ingredients: [
       "spring onion",
       "tofu",
@@ -251,7 +251,7 @@ const recipes = [
       "courgette",
       "cherry tomatoes",
       "curry powder",
-      "corriander",
+      "coriander",
       "tofu",
       "soy sauce",
       "tomato paste",
@@ -312,7 +312,7 @@ const recipes = [
     ],
   },
   {
-    name: "korean style bulgogi rice salad",
+    name: "Korean style bulgogi rice salad",
     ingredients: [
       "lettuce",
       "mangetout",
@@ -373,7 +373,7 @@ const recipes = [
     ],
   },
   {
-    name: "sweet chilli tofu with veg rice",
+    name: "Sweet chilli tofu with veg rice",
     ingredients: [
       "garlic",
       "carrots",
@@ -445,7 +445,7 @@ const recipes = [
       "pepper-green",
       "lime",
       "garlic",
-      "corriander",
+      "coriander",
       "cherry tomatoes",
       "cashews",
       "soy sauce",
@@ -474,7 +474,7 @@ const recipes = [
     name: "Chilli con tofu and crispy tortillas",
     ingredients: [
       "soy sauce",
-      "corriander",
+      "coriander",
       "tofu",
       "avo",
       "black beans",
@@ -491,7 +491,7 @@ const recipes = [
     name: "Oven baked chilli jacket potatoes",
     ingredients: [
       "garlic",
-      "corriander",
+      "coriander",
       "chilli",
       "potato",
       "black beans",
@@ -511,7 +511,7 @@ const recipes = [
       "pepper-red",
       "lime",
       "garlic",
-      "corriander",
+      "coriander",
       "tomato paste",
       "chipotle paste",
       "paprika",
@@ -580,14 +580,14 @@ const recipes = [
     ],
   },
   {
-    name: "chilli roasted squash",
+    name: "Chilli roasted squash",
     ingredients: [
       "onion",
       "lime",
       "basil",
       "roasted peanuts",
       "rocket",
-      "corriander",
+      "coriander",
       "bulgar wheat",
       "soy sauce",
       "chickpeas",
@@ -598,7 +598,7 @@ const recipes = [
     ],
   },
   {
-    name: "chickpea and spinach tikka masala",
+    name: "Chickpea and spinach tikka masala",
     ingredients: [
       "onion",
       "garlic",
@@ -615,7 +615,7 @@ const recipes = [
     ],
   },
   {
-    name: "parma rosa fusili",
+    name: "Parma rosa fusili",
     ingredients: [
       "baby tomotoes",
       "chives",
@@ -629,7 +629,7 @@ const recipes = [
     ],
   },
   {
-    name: "udon curry soup",
+    name: "Udon curry soup",
     ingredients: [
       "pepper-red",
       "garlic",
@@ -646,7 +646,7 @@ const recipes = [
     ],
   },
   {
-    name: "chakalaka",
+    name: "Chakalaka",
     ingredients: [
       "onion",
       "garlic",
@@ -658,15 +658,15 @@ const recipes = [
       "baked beans",
       "spice",
       "veg stock",
-      "corriander",
+      "coriander",
     ],
   }, 
   {
-    name: "black bean curry with naan",
+    name: "Black bean curry with naan",
     ingredients: [
       "black beans",
       "cherry tomotoes",
-      "corriander",
+      "coriander",
       "mint",
       "cucumber",
       "cultured coconut",
@@ -679,7 +679,7 @@ const recipes = [
     ],
   },
   {
-    name: "oven baked squash & coconut curry",
+    name: "Oven baked squash & coconut curry",
     ingredients: [
       "black beans",
       "onion",
@@ -698,7 +698,7 @@ const recipes = [
     ]
   },
   {
-    name: "sweet potato & spinach curry with saffron & lemon rice",
+    name: "Sweet potato & spinach curry with saffron & lemon rice",
     ingredients: [
       "onion",
       "curry powder", 
@@ -714,7 +714,7 @@ const recipes = [
     ]
   },
   {
-    name: "nutty sweet potato & sugar snap curry", 
+    name: "Nutty sweet potato & sugar snap curry", 
     ingredients: [
       "onion", 
       "coriader",
@@ -733,7 +733,7 @@ const recipes = [
     ]
   }, 
   {
-    name: "chickpea tikka masala with spinach rice & flaked almonds",
+    name: "Chickpea tikka masala with spinach rice & flaked almonds",
     ingredients: [
       "onion",
       "chickpeas",
@@ -752,7 +752,7 @@ const recipes = [
     ]
   },
   {
-    name: "coconut curry dal & rice",
+    name: "Coconut curry dal & rice",
     ingredients: [
       "onion",
       "pepper-red",
@@ -767,12 +767,12 @@ const recipes = [
     ]
   },
   {
-    name: "butternut sqaush & cachew saag with pea & mint pilaf",
+    name: "Butternut sqaush & cachew saag with pea & mint pilaf",
     ingredients: [
       "onion",
       "sultanas",
       "garlic",
-      "corriander",
+      "coriander",
       "mint",
       "spinach",
       "tomato paste",
@@ -785,7 +785,7 @@ const recipes = [
     ]
   },
   {
-    name: "butternut squash bhuna with cardamon rice",
+    name: "Butternut squash bhuna with cardamon rice",
     ingredients: [
       "onion",
       "butternut",
@@ -804,11 +804,11 @@ const recipes = [
     ]
   },
   {
-    name: "fragrant vegetable sambar with cultured coconut",
+    name: "Fragrant vegetable sambar with cultured coconut",
     ingredients: [
       "onion",
       "cayenne pepper",
-      "corriander",
+      "coriander",
       "cultured coconut",
       "green beans",
       "garam masala",
@@ -822,11 +822,11 @@ const recipes = [
     ]
   },
   {
-    name: "sweet potato, lentil & coconut dal",
+    name: "Sweet potato, lentil & coconut dal",
     ingredients: [
       "black saseme seeds",
       "onion",
-      "corriander",
+      "coriander",
       "ginger",
       "garlic",
       "lentils",
@@ -839,7 +839,7 @@ const recipes = [
     ]
   },
   {
-    name: "chick'n & red pepper teriyaki with rice",
+    name: "Chick'n & red pepper teriyaki with rice",
     ingredients: [
       "chilli flakes",
       "ginger",
@@ -854,7 +854,7 @@ const recipes = [
     ]
   },
   {
-    name: "chipotle & orange tofu rice bowl with salsa & smashed avo",
+    name: "Chipotle & orange tofu rice bowl with salsa & smashed avo",
     ingredients: [
       "chipotle paste",
       "coriander",
@@ -871,7 +871,7 @@ const recipes = [
     ]
   },
   {
-    name: "black pepper tofu stir fry with rice",
+    name: "Black pepper tofu stir fry with rice",
     ingredients: [
       "onion",
       "rice wine",
@@ -889,7 +889,7 @@ const recipes = [
     ]
   },
   {
-    name: "chick'n tom kha soup with rice",
+    name: "Chick'n tom kha soup with rice",
     ingredients: [
       "onion",
       "mushroom",
@@ -906,7 +906,7 @@ const recipes = [
     ]
   },
   {
-    name: "fragrant red thai veg curry",
+    name: "Fragrant red thai veg curry",
     ingredients: [
       "onion",
       "butternut",
@@ -925,7 +925,7 @@ const recipes = [
     ]
   },
   {
-    name: "chilli cheese smash patty burger & firesauce", 
+    name: "Chilli cheese smash patty burger & firesauce", 
     ingredients: [
       "burger buns",
       "cheese",
@@ -940,7 +940,7 @@ const recipes = [
     ]
   },
   {
-    name: "spicy peri peri tofu burger and corn",
+    name: "Spicy peri peri tofu burger and corn",
     ingredients: [
       "burger buns",
       "cornflour",
@@ -954,7 +954,96 @@ const recipes = [
       "mayo",
       "fries",
     ]
-  } 
+  },
+  {
+    name: "Bang Bang chick'n with crunchy rice salad",
+    ingredients: [
+      "carrot",
+      "cucumber",
+      "five-spice",
+      "lettuce",
+      "chick'n",
+      "red chilli",
+      "rice vinegar",
+      "peanut butter",
+      "soy sauce",
+      "spring onion",
+      "toasted sesame oil",
+      "toasted sesame seeds",
+      "rice",
+    ]
+  },
+  {
+    name: "Roasted veg, Rice & Red pepper salsa",
+    ingredients: [
+      "onion",
+      "pepper-red",
+      "saffron",
+      "garlic",
+      "mint",
+      "coriander",
+      "tomato paste",
+      "peas",
+      "butternut",
+      "turmeric",
+      "paprike",
+      "veg stock",
+      "cumin",
+      "rice"
+    ]
+  },
+  {
+    name: "Fiery chipotle tacos with coriander slaw",
+    ingredients: [
+      "coleslaw",
+      "chipotle paste",
+      "coriander",
+      "chilli",
+      "lime",
+      "tortillas",
+      "sriracha",
+      "tomato paste",
+      "mince",
+      "mayo",
+      "veg stock",
+    ]
+  },
+  {
+    name: "Chilli carne with sweet potato",
+    ingredients: [
+      "coriander",
+      "chilli",
+      "finely chopped tomatoes",
+      "garlic",
+      "cumin",
+      "paprika",
+      "lime",
+      "kidney beans",
+      "onion",
+      "pepper-red",
+      "guac",
+      "sweet potato",
+      "veg stock",
+    ]
+  },
+  {
+    name: "Bhuda bowl",
+    ingredients: [
+      "sweet potato",
+      "quinoa",
+      "tofu",
+      "broccoli",
+      "cualiflower",
+      "carrot",
+      "onion",
+      "pepper-red",
+      "tomato",
+      "cucumber",
+      "mixed beans",
+      "avo",
+      "hummus",
+    ]
+  }  
   
 ];
 // end of recipes
@@ -985,7 +1074,6 @@ const aisles = {
     "garlic",
     "ginger",
     "cherry tomatoes",
-    "corriander",
     "rocket",
     "carrot",
     "cucumber",
@@ -1028,6 +1116,7 @@ const aisles = {
   ],
   pantry: [
     "peri peri spice",
+    "peanut butter",
     "chilli relish",
     "umami seasoning",
     "five spice",
@@ -1062,7 +1151,7 @@ const aisles = {
     "ketchup",
     "relish",
     "onion marmalade",
-    "corriander-ground",
+    "coriander-ground",
     "flaked almonds",
     "ginger paste",
     "rice",

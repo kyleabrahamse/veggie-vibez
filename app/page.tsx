@@ -135,7 +135,10 @@ export default function Home() {
             onClick={generateRandomRecipe}
             className="border bg-[#4fd5fe] rounded-lg px-5 py-2"
           >
-            Genrate Shopping List
+            Generate Shopping List
+          </button>
+          <button>
+            Add Bhuda bowl
           </button>
         </div>
 
