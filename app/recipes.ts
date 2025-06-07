@@ -522,19 +522,19 @@ const recipes = [
       "kidney beans",
     ],
   },
-  {
-    name: "Nachos",
-    ingredients: [
-      "tortillas chips",
-      "salsa",
-      "cheese",
-      "guac",
-      "soy mince",
-      "onion",
-      "cucumber",
-      "tomato",
-    ],
-  },
+  // {
+  //   name: "Nachos",
+  //   ingredients: [
+  //     "tortillas chips",
+  //     "salsa",
+  //     "cheese",
+  //     "guac",
+  //     "soy mince",
+  //     "onion",
+  //     "cucumber",
+  //     "tomato",
+  //   ],
+  // },
   {
     name: "Lentil risotto",
     ingredients: [
@@ -619,7 +619,7 @@ const recipes = [
     ingredients: [
       "baby tomotoes",
       "chives",
-      "red onion",
+      "onion",
       "garlic clove",
       "soy cream",
       "marinara sauce",
@@ -650,7 +650,7 @@ const recipes = [
     ingredients: [
       "onion",
       "garlic",
-      "green pepper",
+      "pepper-green",
       "pepper-red",
       "carrots",
       "tomato",
@@ -1043,8 +1043,123 @@ const recipes = [
       "avo",
       "hummus",
     ]
-  }  
-  
+  },  
+  {
+    name: "Spicy harissa butternut & butter bean stew with mash",
+    ingredients: [
+      "butter beans",
+      "butternut",
+      "garlic",
+      "paprika",
+      "harissa paste",
+      "parsley",
+      "onion",
+      "pepper-red",
+      "potato",
+      "veg stock",
+    ]
+  },
+  {
+    name: "Baked butternut biryani",
+    ingredients: [
+      "butternut",
+      "cardamon",
+      "coriander",
+      "cultured coconut",
+      "curry powder",
+      "bay leaves",
+      "ginger",
+      "garlic",
+      "chilli",
+      "turmeric",
+      "tomato",
+      "veg stock",
+      "rice",
+    ]
+  },
+  {
+    name: "Dal mahkani & sweet potato",
+    ingredients: [
+      "onion",
+      "cumin seeds",
+      "chilli flakes",
+      "ginger",
+      "garam masala",
+      "garlic",
+      "lentils",
+      "paprika",
+      "turmeric",
+      "solid creamed coconut",
+      "sweet potato",
+      "tender stem broccoli",
+      "tomato paste",
+      "veg stock",
+    ]
+  },
+  {
+    name: "Hotpot with wilted greens",
+    ingredients: [
+      "onion",
+      "carrot",
+      "bay leaves",
+      "lentils",
+      "henderson's relish",
+      "onion marmalade",
+      "kale",
+      "thyme",
+      "tomato paste",
+      "veg stock",
+      "potato",
+    ]
+  },
+  {
+    name: "spinach & basil spaghetti",
+    ingredients: [
+      "basil",
+      "peas",
+      "soy cream",
+      "lemon",
+      "seeds",
+      "garlic paste",
+      "spaghetti",
+      "spinach",
+      "veg stock",
+    ]
+  },
+  {
+    name: "Tomato linguine with pangrattato",
+    ingredients: [
+      "tomato paste",
+      "basil",
+      "cherry tomatoes",
+      "linguine",
+      "garlic paste",
+      "pepper-red",
+      "nduja",
+      "veg stock",
+      "bread crumbs",
+    ]
+  },
+  {
+    name: "Rainbow veg & black bean curry",
+    ingredients: [
+      "black beans",
+      "onion",
+      "cultured coconut",
+      "curry powder",
+      "chilli flakes",
+      "finely chopped tomatoes",
+      "garlic",
+      "paprika",
+      "parsley",
+      "pepper-red",
+      "pepper-yellow",
+      "spinach",
+      "tender stem broccoli",
+      "veg stock",
+    ]
+  }
+    
 ];
 // end of recipes
 // ******************************
@@ -1059,6 +1174,7 @@ const recipes = [
 
 const aisles = {
   freshProduce: [
+    "parsley",
     "mushroom", 
     "lemon grass",
     "orange",
@@ -1073,7 +1189,6 @@ const aisles = {
     "spring onion",
     "garlic",
     "ginger",
-    "cherry tomatoes",
     "rocket",
     "carrot",
     "cucumber",
@@ -1101,6 +1216,7 @@ const aisles = {
     "avo",
     "chives",
     "pea pods",
+    "thyme",
   ],
   fridgeyStuff: [
     "tofu",
@@ -1113,8 +1229,14 @@ const aisles = {
     "gnocchi",
     "spread",
     "smoked tofu",
+    "fries",
   ],
   pantry: [
+    "linguine",
+    "nduja",
+    "spaghetti",
+    "henderson's relish",
+    "bay leaves",
     "peri peri spice",
     "peanut butter",
     "chilli relish",
@@ -1201,6 +1323,7 @@ const aisles = {
     "cardamon",
     "tumeric",
     "nigella seeds",
+    "seeds",
   ],
   canned: [
     "black beans",

@@ -137,9 +137,9 @@ export default function Home() {
           >
             Generate Shopping List
           </button>
-          <button>
+          {/* <button>
             Add Bhuda bowl
-          </button>
+          </button> */}
         </div>
 
         <h2>Shopping List</h2>
